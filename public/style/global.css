@@ -1,0 +1,70 @@
+/*GLOABAL.CSS*/
+* {
+	/* reset */
+	margin:0;padding:0;
+	/*font*/
+	font-family: Verdana;
+}
+p {padding:10px;}
+
+html{
+	max-width:100%;
+  /* Standardschriftgröße inhalte */
+  font-size:100%;
+  /* Lesefluss festlegen*/
+  direction:ltr;
+/* automatische Silbentrennung in modernen Browsern */
+	-ms-hyphens:auto;
+	-webkit-hyphens:auto;
+	-moz-hyphens:auto;
+	hyphens:auto;
+}
+/* Boxmodell generell festlegen*/
+*,*:before,*:after{box-sizing:content-box;}
+
+/*body Formatierung*/
+body {max-width:1600px;margin-left:auto;margin-right:auto;padding-top:10px;
+	/*font size 100.1% für IE8/9*/
+	font-size: 100.1%;
+}
+/* Überschriften */ 
+h1 {font-size:225%;}
+h2 {font-size:200%;text-align:center;}
+h3 {font-size:166%;}
+h4 {font-size:125%;}
+
+/* Listen */
+ul, ol {list-style: none;}
+ul li, ol li {display: block;}
+
+/* links */
+a {text-decoration: none;font-size: 125%;color:inherit;}
+/* zustände hover focus active*/
+a:hover, a:focus {
+	color: darkorange;
+	font-weight: bold;
+	/* font-size: 125%; */
+}
+nav li:focus {
+	color: darkorange;
+}
+.active, .active:hover, .active:focus {
+	font-style: italic;
+	background-color: #333;
+}
+
+/* Formulardarstellung*/
+input,textarea,select,fieldset,form,label {
+  /* Standardabstände überschreiben*/
+  padding:1px 0px;
+  display:block;
+}
+
+/* für ältere Browser */
+nav, main, footer, section, article, aside, figure {
+	display:block;
+}
+
+/* Clearfix */
+.clearfix {clear:both;}
+.clearfix:after {content: "";display: table;clear: both;}

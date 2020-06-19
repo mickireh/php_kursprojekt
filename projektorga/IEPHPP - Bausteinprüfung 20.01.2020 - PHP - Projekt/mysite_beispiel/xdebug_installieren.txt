@@ -1,0 +1,26 @@
+1. Download Xdebug https://gist.github.com/odan/1abe76d373a9cbb15bed
+2. File nach xampp/php/ext kopieren
+3. xampp/php/php.ini in Editor öffnen
+4. output_buffering = Off
+5. [Xdebug] Sektion einfügen
+5. Apache und MySQL über Xampp Controlpanel neustarten
+6. Visual Studio Code PHP Debug installieren
+7. Firefox Xdebug Helper Addon installieren
+	Danach erscheint in der der Adressleiste rechts ein Käfer
+	diesen anklicken und auf Debug, im VS-Code auf den Debuger
+
+[XDebug]
+zend_extension = "c:\xampp\php\ext\php_xdebug-2.4.0rc3-7.0-vc14.dll"
+xdebug.profiler_append = 0
+xdebug.profiler_enable = 0
+xdebug.profiler_enable_trigger = 0
+xdebug.profiler_output_dir = "c:\xampp\tmp"
+;xdebug.profiler_output_name = "cachegrind.out.%t-%s"
+xdebug.remote_enable = 1
+xdebug.remote_handler = "dbgp"
+xdebug.remote_host = "127.0.0.1"
+xdebug.remote_log="c:\xampp\tmp\xdebug.txt"
+xdebug.remote_port = 9000
+xdebug.trace_output_dir = "c:\xampp\tmp"
+; 3600 (1 hour), 36000 = 10h
+xdebug.remote_cookie_expire_time = 36000

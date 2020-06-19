@@ -1,0 +1,62 @@
+Projekt
+Kurs: WebDev 121n-09.1
+Michael Hirsch
+
+https://docs.google.com/drawings/d/1fHboJ9r_MVGeGachS5ox3gQDznQXUy7jSQOZIVn_G1c/edit
+
+
+
+
+katze
+    - Galerie wird dynamisch aus datenbankeinträgen erstellt. 
+    - Galerie hat Lightbox JS eingebunden für vergrößerung und navigation innerhalb der Gallerie.
+    - Galerie mit like system für eingeloggte benutzer. Sollte der Benutzer nicht eingeloogt sein, kann er nicht "Daumen hoch" drücken. Ist der Benutzer eingeloggt, wird unterschieden, ob der Benutzer dem Bild bereits ein Klick gegeben hat. Auch wird unterschieden, ob das Bild überhaupt einen "like" bekommen hat. 
+
+    (Wunsch: "Like" auch in die Lightbox einbauen. nicht sicher ob umsetzbar)
+
+
+musik
+    - Vorstellung. Sinn ist nur HTML/CSS. So viele verschiedene Elemente wie möglich. Lieder? Youtube?
+
+    - Applikation Songliste
+
+    Zweck ist eine Sammlung von Liedern 
+
+    In der Liste wird Songname und Interpret eingetragen. Dazu wird ein Link zu einer Seite mit Tabulatur zu diesem Lied sowie der Liedtext gespeichert. als .txt um ...
+    Die Ausgabe der Liste wird dynmaisch erzeugt. Zunächst nach Anfangsbuchstabe, ein umschalten ist möglich. 
+    bei klick auf listeneintrag werden details angezeigt. (hier editierbar)
+
+    Seite soll auch funktionieren wenn JavaScript deaktiviert ist.
+
+    Die Liste könnte auch für andere Einträge benutzt werden, zB eine Rezeptliste. Rezeptname, Kategoriename, Rezept speichern, Bild etc.
+    (Ein weiterführender Gedanke ist eine modulare Liste, bei der der Benutzer beim Registrieren Listenthema/Spaltennamen selbst vergeben kann. Möglichkeit bieten verschiedene Daten zu einem Listeneintrag zu speichern (Link, Bild, Text..).)
+
+
+
+Registrieren Login logout
+    Validierung HTML, JS, PHP
+
+______________________________________________________________________________________
+nav
+    home
+    katze (->
+            evtl. marks # gallery, messageboard)
+    musik
+        -> liste
+                ->hinzufügen
+            ->editieren nach auswahl
+    kontakt
+        ->weiterleitung antwortseite(als 'GET') --> weiterletiung home
+    impressum
+
+//wenn eingeloggt
+    logout
+//sonst
+    register
+    login
+___________________
+- hamburger menu für responsive
+- mit tab benutzbar -> JS events!
+- CSS animationen dezent
+
+______________________________________________________________________________________
